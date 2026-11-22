@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#F6EFE6">
+<title>Darul Arqam</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Caveat:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<main id="app">
+
+<!-- ============ 01 · ЗАСТАВКА ============ -->
+<section class="screen" id="splash">
+  <div class="splash">
+    <img class="logo-mark" src="img/mark.png" alt="">
+    <img class="logo-word" src="img/word.png" alt="Darul Arqam">
+    <div class="fit" data-w="390" data-h="370" data-full>
+      <div class="board">
+        <div class="print abs" style="left:236px;top:18px;width:128px;height:150px;--r:7deg"><div class="ph" data-crop="lilies"></div></div>
+        <div class="print abs" style="left:18px;top:196px;width:112px;height:140px;--r:-7deg"><div class="ph" data-crop="lantern"></div></div>
+        <div class="polaroid abs" style="left:92px;top:22px;width:210px;height:286px;--r:-3deg"><div class="ph" data-crop="hero"></div><div class="cap">учусь каждый день</div></div>
+        <span class="abs" style="left:158px;top:10px;width:84px;height:26px;--r:-5deg" data-sticker="tape"></span>
+        <div class="note lav abs" style="left:252px;top:194px;width:124px;height:110px;--r:5deg">
+          <span class="n-sm plum">сегодня:</span>
+          <span class="n-lg">5 новых слов</span>
+          <svg width="28" height="20" viewBox="0 0 28 20" aria-hidden="true"><path d="M2 10 L10 17 L26 3" stroke="#6E5A8E" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="abs" style="left:290px;top:184px;width:48px;height:18px;--r:-8deg" data-sticker="tape" data-color="#E9DCCB"></span>
+        <span class="abs" style="left:66px;top:4px;width:66px;height:66px" data-sticker="plumeria"></span>
+        <span class="abs" style="left:116px;top:298px;width:152px;height:62px;--r:-4deg" data-sticker="bismillah"></span>
+        <span class="abs" style="left:20px;top:118px;width:52px;height:52px" data-sticker="sparkle"></span>
+        <span class="abs" style="left:296px;top:312px;width:72px;height:54px;--r:10deg" data-sticker="bow"></span>
+      </div>
+    </div>
+    <h1 class="h-display center">Арабский язык —<br><em>в ритме вашей жизни</em></h1>
+    <p class="muted center splash-text">Онлайн-курсы школы Darul Arqam. Выберите курс и запишитесь в пару касаний.</p>
+    <div class="grow"></div>
+    <a href="#" class="btn primary wide" data-go="home">Начать <i data-icon="arrow"></i></a>
+    <a href="#" class="text-link" data-go="courses">Смотреть все курсы</a>
+  </div>
+</section>
+
+<!-- ============ 02 · ГЛАВНАЯ ============ -->
+<section class="screen pad" id="home">
+  <header class="home-head">
+    <div class="avatar-ring sm"><div class="avatar ph" data-crop="portrait" id="home-avatar"></div></div>
+    <div class="grow">
+      <span class="hand plum greet">Ассаляму алейкум,</span>
+      <span class="serif name" id="home-name">дорогая ученица</span>
+    </div>
+    <img src="img/mark.png" alt="Darul Arqam" class="head-mark">
+  </header>
+
+  <section class="hero-card" id="hero-card"></section>
+
+  <div class="sec-head">
+    <h3 class="h3">Мои заметки</h3>
+    <a href="#" class="text-link sm" data-go="diary">Дневник</a>
+  </div>
+  <div class="fit" data-w="350" data-h="168">
+    <div class="board">
+      <div class="note abs" style="left:2px;top:16px;width:112px;height:122px;--r:-4deg">
+        <span class="n-sm muted-h">урок сегодня</span>
+        <span class="n-xl">в 19:00</span>
+        <span class="n-xs plum">не забыть тетрадь</span>
+      </div>
+      <span class="abs" style="left:30px;top:6px;width:56px;height:20px;--r:-6deg" data-sticker="tape"></span>
+      <div class="print abs" style="left:124px;top:4px;width:108px;height:140px;--r:3deg;padding-bottom:22px"><div class="ph" data-crop="notebook"></div></div>
+      <span class="abs" style="left:150px;top:-6px;width:58px;height:20px;--r:4deg" data-sticker="tape" data-color="#EBB9C4"></span>
+      <div class="note lav abs" style="left:238px;top:20px;width:112px;height:122px;--r:4deg">
+        <span class="n-sm plum b">повторить:</span>
+        <span class="ar-note" lang="ar" dir="rtl">صَبْرٌ</span>
+        <span class="ar-note" lang="ar" dir="rtl">كَلَامٌ</span>
+      </div>
+      <span class="abs" style="left:318px;top:0;width:38px;height:38px" data-sticker="sparkle"></span>
+    </div>
+  </div>
+
+  <section class="word-card lined">
+    <div class="grow">
+      <span class="label plum">Слово дня</span>
+      <span class="hand word-ru" id="word-ru"></span>
+    </div>
+    <span class="word-ar" lang="ar" dir="rtl" id="word-ar"></span>
+    <span class="abs word-heart" data-sticker="heart"></span>
+  </section>
+</section>
+
+<!-- ============ 03 · КУРСЫ ============ -->
+<section class="screen pad" id="courses">
+  <div class="courses-head">
+    <img src="img/word.png" alt="Darul Arqam" class="head-word">
+    <h1 class="h-page">Наши <em>курсы</em></h1>
+    <div class="tip-note">совет: начните с «Арабский с нуля»</div>
+    <span class="abs tip-tape" data-sticker="tape" data-color="#E9DCCB"></span>
+  </div>
+  <label class="search">
+    <i data-icon="search"></i>
+    <span class="sr">Поиск курса</span>
+    <input id="search" type="search" placeholder="Найти курс" autocomplete="off">
+  </label>
+  <div class="tabs" role="tablist">
+    <button role="tab" class="tab on" data-tab="new" aria-selected="true">Новые наборы</button>
+    <button role="tab" class="tab" data-tab="active" aria-selected="false">Активные группы</button>
+  </div>
+  <div class="course-list" id="course-list"></div>
+</section>
+
+<!-- ============ 04 · СТРАНИЦА КУРСА ============ -->
+<section class="screen pad has-bar" id="course">
+  <div class="top-row">
+    <a href="#" class="circle-btn" data-back aria-label="Назад"><i data-icon="back"></i></a>
+    <img src="img/word.png" alt="Darul Arqam" class="top-word">
+    <span class="circle-btn ghost" aria-hidden="true"></span>
+  </div>
+  <div id="course-body"></div>
+  <div class="bottom-bar">
+    <div class="seats"><span>Осталось мест</span><b class="hand plum" id="cd-seats"></b></div>
+    <a href="#" class="btn primary grow" id="to-enroll">Записаться <i data-icon="arrow"></i></a>
+  </div>
+</section>
+
+<!-- ============ 05 · ЗАПИСЬ ============ -->
+<section class="screen pad has-sheet" id="enroll">
+  <div class="top-row left">
+    <a href="#" class="circle-btn" data-back aria-label="Назад"><i data-icon="back"></i></a>
+    <div class="steps">
+      <span class="hand plum b">шаг 1 из 2</span>
+      <div class="step-bars"><span class="on"></span><span></span></div>
+    </div>
+  </div>
+  <h1 class="h-page">Запись <em>на курс</em></h1>
+  <div class="mini-course" id="enroll-course"></div>
+  <div class="field">
+    <label for="f-name">Ваше имя</label>
+    <input id="f-name" type="text" placeholder="Например, Мариям" autocomplete="name">
+    <small class="err-msg" id="err-name"></small>
+  </div>
+  <div class="field">
+    <label for="f-phone">Номер телефона</label>
+    <input id="f-phone" type="tel" placeholder="+_ ___ ___ __ __" autocomplete="tel" inputmode="tel">
+    <small class="err-msg" id="err-phone"></small>
+    <div class="phone-row">
+      <button type="button" class="btn dashed" id="share-phone"><i data-icon="phone"></i> Взять из Telegram</button>
+      <span class="hand phone-hint">номер нужен, чтобы с вами связались</span>
+    </div>
+  </div>
+  <div class="sheet">
+    <span class="abs sheet-tape" data-sticker="tape"></span>
+    <p class="sheet-q" id="confirm-q"></p>
+    <p class="muted small center">После подтверждения администратор свяжется с вами в Telegram.</p>
+    <button type="button" class="btn primary wide" id="confirm">Да, подтверждаю</button>
+    <a href="#" class="btn outline wide" data-back>Вернуться к курсу</a>
+  </div>
+</section>
+
+<!-- ============ 06 · ЗАЯВКА ПРИНЯТА (видна при открытии вне Telegram) ============ -->
+<section class="screen" id="success">
+  <div class="splash">
+    <div class="fit" data-w="390" data-h="330" data-full>
+      <div class="board">
+        <div class="polaroid abs" style="left:86px;top:22px;width:218px;height:292px;--r:3deg"><div class="ph" data-crop="hero"></div><div class="cap">я записалась!</div></div>
+        <span class="abs" style="left:154px;top:10px;width:86px;height:26px;--r:4deg" data-sticker="tape"></span>
+        <span class="abs" style="left:22px;top:40px;width:132px;height:82px;--r:-8deg" data-sticker="mashallah"></span>
+        <span class="abs" style="left:270px;top:210px;width:92px;height:92px;--r:10deg" data-sticker="done"></span>
+        <span class="abs" style="left:300px;top:34px;width:56px;height:56px" data-sticker="sparkle"></span>
+        <span class="abs" style="left:34px;top:232px;width:74px;height:56px;--r:-12deg" data-sticker="bow"></span>
+        <span class="abs" style="left:70px;top:150px;width:44px;height:44px" data-sticker="plumeria"></span>
+      </div>
+    </div>
+    <h1 class="h-display center">Заявка <em>принята</em></h1>
+    <p class="hand plum b center blessing">Барака Аллаhу фикум</p>
+    <p class="muted center splash-text">Администратор свяжется с вами в Telegram, чтобы подтвердить запись.</p>
+    <div class="grow"></div>
+    <a href="#" class="btn primary wide" data-go="home">На главную</a>
+    <a href="#" class="text-link" data-go="profile">Мои заявки</a>
+  </div>
+</section>
+
+<!-- ============ 07 · ДНЕВНИК ============ -->
+<section class="screen pad" id="diary">
+  <div class="diary-head">
+    <span class="diary-tag" data-sticker="tag"></span>
+    <div class="diary-title">
+      <span class="serif h3">Дневник</span>
+      <span class="muted small">заметки и вдохновение</span>
+    </div>
+  </div>
+  <div class="masonry">
+    <div class="col">
+      <div class="print rel" style="height:196px;--r:-1.5deg;padding-bottom:26px">
+        <div class="ph" data-crop="gypsophila"></div>
+        <span class="print-cap">нежность</span>
+        <span class="abs tape-top" data-sticker="tape"></span>
+      </div>
+      <div class="note lav rel" style="--r:1.5deg">
+        <span class="n-sm plum b">цель недели:</span>
+        <span class="n-lg deep">20 новых слов</span>
+        <span class="n-xs plum">отмечайте прогресс в заметках</span>
+        <span class="abs" style="right:-10px;top:-14px;width:38px;height:38px" data-sticker="sparkle"></span>
+      </div>
+      <div class="rel arch-photo" style="height:150px"><div class="ph" data-crop="candle"></div></div>
+    </div>
+    <div class="col" style="padding-top:10px">
+      <div class="lined rel fav-word" style="--r:1deg">
+        <span class="label plum">любимое слово</span>
+        <span class="word-ar right" lang="ar" dir="rtl">سَكِينَةٌ</span>
+        <span class="hand b">сакина — спокойствие</span>
+        <span class="abs" style="left:-8px;top:-12px;width:42px;height:40px;--r:-12deg" data-sticker="heart"></span>
+      </div>
+      <div class="print rel" style="height:176px;--r:-2deg">
+        <div class="ph" data-crop="lamp"></div>
+        <span class="abs" style="right:-12px;bottom:-14px;width:50px;height:50px" data-sticker="plumeria"></span>
+      </div>
+      <div class="note rel hand-note" style="--r:1.5deg">
+        ин шаа Аллаh, сегодня повторю алфавит
+        <span class="abs tape-top" data-sticker="tape" data-color="#EBB9C4"></span>
+      </div>
+    </div>
+  </div>
+  <div class="sec-head" id="my-notes-head" hidden><h3 class="h3">Мои записи</h3></div>
+  <div class="my-notes" id="my-notes"></div>
+  <button class="fab" id="add-note" aria-label="Новая заметка"><i data-icon="plus"></i></button>
+</section>
+
+<!-- ============ 08 · ПРОФИЛЬ ============ -->
+<section class="screen pad" id="profile">
+  <div class="profile-top">
+    <div class="avatar-ring lg"><div class="avatar ph" data-crop="portrait" id="prof-avatar"></div></div>
+    <span class="abs prof-stamp" data-sticker="stamp"></span>
+    <span class="abs prof-moon" data-sticker="moon"></span>
+    <span class="serif prof-name" id="prof-name">Ученица</span>
+    <span class="hand plum b">ученица Darul Arqam</span>
+    <span class="muted small" id="prof-user"></span>
+  </div>
+  <h2 class="h3">Мои заявки</h2>
+  <div id="my-requests" class="stack"></div>
+  <div class="menu-list">
+    <a href="#" data-link="managerUrl"><i data-icon="send"></i><span class="grow">Написать менеджеру</span><i data-icon="chev"></i></a>
+    <a href="#" data-link="channelUrl"><i data-icon="mega"></i><span class="grow">Наш канал</span><i data-icon="chev"></i></a>
+    <a href="#" data-go="courses"><img src="img/mark.png" alt="" class="menu-mark"><span class="grow">Курсы школы Darul Arqam</span><i data-icon="chev"></i></a>
+  </div>
+</section>
+
+</main>
+
+<!-- Нижнее меню -->
+<nav class="tabbar" id="tabbar" aria-label="Навигация" hidden>
+  <a href="#" data-go="home"><i data-icon="home"></i>Главная</a>
+  <a href="#" data-go="courses"><i data-icon="book"></i>Курсы</a>
+  <a href="#" data-go="diary"><i data-icon="pen"></i>Дневник</a>
+  <a href="#" data-go="profile"><i data-icon="user"></i>Профиль</a>
+</nav>
+
+<!-- Окно новой заметки -->
+<div class="overlay" id="note-overlay" hidden>
+  <div class="note-sheet">
+    <span class="abs sheet-tape" data-sticker="tape"></span>
+    <label for="note-text" class="serif h3">Новая заметка</label>
+    <textarea id="note-text" maxlength="160" placeholder="Например: выучить 5 слов про семью"></textarea>
+    <div class="color-row" role="radiogroup" aria-label="Цвет заметки">
+      <button type="button" class="swatch on" data-color="paper" aria-label="Кремовая" role="radio" aria-checked="true"></button>
+      <button type="button" class="swatch lav" data-color="lav" aria-label="Сиреневая" role="radio" aria-checked="false"></button>
+    </div>
+    <button type="button" class="btn primary wide" id="save-note">Сохранить</button>
+    <button type="button" class="btn outline wide" id="cancel-note">Отмена</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="config.js?v=1"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>
